@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>碳足迹计算器 - 绿色家园</title>
+    <link rel="stylesheet" href="../assets/styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header id="header"></header>
+    
+    <main class="section" style="padding-top: 140px;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">碳足迹计算器</h2>
+                <p class="section-desc">了解您的日常碳排放，制定个性化减碳方案</p>
+            </div>
+            
+            <div class="calculator-grid">
+                <div class="calculator-form">
+                    <form id="carbon-form">
+                        <div class="form-group">
+                            <label for="transport">🚗 交通工具</label>
+                            <select id="transport" name="transport" required>
+                                <option value="">请选择</option>
+                                <option value="car">私家车（汽油）</option>
+                                <option value="electric-car">电动车</option>
+                                <option value="bus">公交车</option>
+                                <option value="subway">地铁</option>
+                                <option value="bike">自行车/步行</option>
+                            </select>
+                            <div class="error" id="transport-error"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="distance">🛣️ 每日通勤距离（公里）</label>
+                            <input type="number" id="distance" name="distance" min="0" max="500" placeholder="请输入距离">
+                            <div class="error" id="distance-error"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="electricity">💡 每月用电量（度）</label>
+                            <input type="number" id="electricity" name="electricity" min="0" max="10000" placeholder="请输入电量">
+                            <div class="error" id="electricity-error"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="water">💧 每月用水量（吨）</label>
+                            <input type="number" id="water" name="water" min="0" max="500" placeholder="请输入水量">
+                            <div class="error" id="water-error"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="diet">🍽️ 饮食习惯</label>
+                            <select id="diet" name="diet" required>
+                                <option value="">请选择</option>
+                                <option value="vegetarian">素食</option>
+                                <option value="flexitarian">半素食（偶尔吃肉）</option>
+                                <option value="omnivore">杂食</option>
+                            </select>
+                            <div class="error" id="diet-error"></div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">计算碳足迹</button>
+                    </form>
+                </div>
+                
+                <div class="calculator-result">
+                    <div id="result-card" class="card" style="display: none;">
+                        <h3 style="font-size: 20px; margin-bottom: 1.5rem;">📊 您的碳足迹报告</h3>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progress-fill"></div>
+                        </div>
+                        <div id="result-content"></div>
+                        <div id="suggestions" style="margin-top: 1.5rem;">
+                            <h4 style="font-size: 16px; margin-bottom: 1rem;">💡 减碳建议</h4>
+                            <ul id="suggestion-list" style="list-style: none; padding-left: 0;"></ul>
+                        </div>
+                        <button id="save-btn" class="btn btn-secondary" style="width: 100%; margin-top: 1.5rem;">保存记录</button>
+                    </div>
+                    
+                    <div id="empty-state" class="card" style="text-align: center; padding: 4rem 2rem;">
+                        <div style="font-size: 5rem; margin-bottom: 1.5rem;">🌍</div>
+                        <h3 style="font-size: 22px; margin-bottom: 0.75rem;">开始计算您的碳足迹</h3>
+                        <p style="color: var(--text-light); font-size: 15px;">填写左侧表单，了解您的日常碳排放情况</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="history-section" style="margin-top: 4rem;">
+                <h3 style="font-size: 28px; text-align: center; margin-bottom: 2.5rem; color: var(--text-dark);">📜 历史记录</h3>
+                <div id="history-list" class="cards"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer"></footer>
+
+    <script src="../components/header.js"></script>
+    <script src="../components/footer.js"></script>
+    <script src="../components/common.js"></script>
+    <script src="../scripts/calculator.js"></script>
+</body>
+</html>

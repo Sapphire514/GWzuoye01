@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>环保活动 - 绿色家园</title>
+    <link rel="stylesheet" href="../assets/styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
+</head>
+<body>
+    <header id="header"></header>
+    
+    <main class="section" style="padding-top: 140px;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">环保活动</h2>
+                <p class="section-desc">参与各类环保活动，与志同道合的伙伴一起践行绿色生活</p>
+            </div>
+            
+            <div class="swiper" id="activity-swiper" style="margin-bottom: 3rem;">
+                <div class="swiper-wrapper">
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            
+            <div style="display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap;">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="upcoming">即将开始</button>
+                <button class="filter-btn" data-filter="ongoing">进行中</button>
+                <button class="filter-btn" data-filter="completed">已结束</button>
+            </div>
+            
+            <div id="activities-container" class="cards"></div>
+        </div>
+    </main>
+
+    <div class="modal" id="activity-modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h3 id="modal-title"></h3>
+            <div id="modal-content"></div>
+            <button id="register-btn" class="btn btn-primary" style="width: 100%; margin-top: 1.5rem;">立即报名</button>
+        </div>
+    </div>
+
+    <footer id="footer"></footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <script src="../components/header.js"></script>
+    <script src="../components/footer.js"></script>
+    <script src="../components/common.js"></script>
+    <script src="../scripts/activities.js"></script>
+</body>
+</html>

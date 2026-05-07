@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>环保知识 - 绿色家园</title>
+    <link rel="stylesheet" href="../assets/styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header id="header"></header>
+    
+    <main class="section" style="padding-top: 140px;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">环保知识</h2>
+                <p class="section-desc">学习环保知识，了解最新环保资讯，成为环保达人</p>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 3rem;">
+                <div class="card">
+                    <h3>📊 碳排放数据统计</h3>
+                    <div id="carbon-chart" style="height: 300px;"></div>
+                </div>
+                <div class="card">
+                    <h3>🌳 垃圾分类占比</h3>
+                    <div id="waste-chart" style="height: 300px;"></div>
+                </div>
+            </div>
+            
+            <div style="display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap;">
+                <button class="category-btn active" data-category="all">全部</button>
+                <button class="category-btn" data-category="tips">实用技巧</button>
+                <button class="category-btn" data-category="news">环保新闻</button>
+                <button class="category-btn" data-category="science">科普知识</button>
+            </div>
+            
+            <div id="articles-container" class="cards"></div>
+            
+            <div id="quiz-section" style="margin-top: 3rem;">
+                <div class="card">
+                    <h3>🧠 环保知识小测试</h3>
+                    <div id="quiz-container" style="margin-top: 1rem;"></div>
+                    <div id="quiz-result" style="margin-top: 1rem;"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer"></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <script src="../components/header.js"></script>
+    <script src="../components/footer.js"></script>
+    <script src="../components/common.js"></script>
+    <script src="../scripts/knowledge.js"></script>
+</body>
+</html>
