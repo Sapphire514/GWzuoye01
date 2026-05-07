@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <h4>联系我们</h4>
                         <ul>
                             <li><a href="#">1739105807@qq.com</a></li>
-                            <li><a href="#">18391014315</a></li>
+                            <li><a href="#">10000000000</a></li>
                             <li><a href="#">西安市雁塔区</a></li>
                         </ul>
                     </div>
