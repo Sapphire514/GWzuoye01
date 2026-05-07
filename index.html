@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绿色家园 - 环保公益平台</title>
+    <meta name="description" content="绿色家园致力于环保公益宣传，倡导低碳生活，守护绿水青山">
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header id="header"></header>
+    
+    <main>
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-pattern"></div>
+            <div class="hero-content">
+                <div class="hero-label">
+                    <span>Eco · Sustainable · Future</span>
+                </div>
+                <h1 class="hero-title">
+                    共建绿色家园
+                    <span>守护地球未来</span>
+                </h1>
+                <p class="hero-subtitle">
+                    倡导低碳生活理念，推动生态文明建设<br>
+                    让每一个微小行动，汇聚成守护星球的力量
+                </p>
+                <div class="hero-actions">
+                    <a href="views/calculator.html" class="btn btn-primary">开始计算</a>
+                    <a href="views/activities.html" class="btn btn-secondary">参与活动</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section features">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">我们的服务</span>
+                    <h2 class="section-title">环保行动，从心开始</h2>
+                    <p class="section-desc">提供全方位的环保工具与社区平台</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card" data-page="calculator">
+                        <div class="feature-icon">🌱</div>
+                        <h3 class="feature-title">碳足迹计算</h3>
+                        <p class="feature-desc">精准评估日常碳排放，制定个性化减碳方案</p>
+                    </div>
+                    <div class="feature-card" data-page="activities">
+                        <div class="feature-icon">🌍</div>
+                        <h3 class="feature-title">环保活动</h3>
+                        <p class="feature-desc">参与丰富多样的环保活动，践行绿色生活方式</p>
+                    </div>
+                    <div class="feature-card" data-page="tasks">
+                        <div class="feature-icon">✨</div>
+                        <h3 class="feature-title">每日任务</h3>
+                        <p class="feature-desc">完成日常环保任务，积累绿色积分成就</p>
+                    </div>
+                    <div class="feature-card" data-page="knowledge">
+                        <div class="feature-icon">📚</div>
+                        <h3 class="feature-title">环保知识</h3>
+                        <p class="feature-desc">学习最新环保资讯，提升环保意识与知识</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number" id="stat-users">0</div>
+                        <div class="stat-label">活跃用户</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="stat-trees">0</div>
+                        <div class="stat-label">累计植树</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="stat-co2">0</div>
+                        <div class="stat-label">减少碳排放（吨）</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="stat-events">0</div>
+                        <div class="stat-label">举办活动</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section tips">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">绿色生活</span>
+                    <h2 class="section-title">每日环保小贴士</h2>
+                    <p class="section-desc">从日常小事做起，为地球减负</p>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <div class="card-icon">💧</div>
+                        <h3>节约用水</h3>
+                        <p>洗菜水浇花，洗衣水冲厕，缩短淋浴时间。每一滴水，都是生命的源泉。</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">♻️</div>
+                        <h3>垃圾分类</h3>
+                        <p>正确分类投放，减少环境污染。举手之劳，守护蓝色星球。</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🚶</div>
+                        <h3>绿色出行</h3>
+                        <p>短途步行或骑行，远途选择公共交通。低碳出行，健康生活。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <footer id="footer"></footer>
+
+    <script src="components/header.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="components/common.js"></script>
+    <script src="scripts/index.js"></script>
+</body>
+</html>
